@@ -13,7 +13,7 @@ public class FileSystem : MonoBehaviour
 
     void PopFile()
     {
-        
+        files.RemoveAt(files.Count-1);
     }
     // Start is called before the first frame update
     void Start()
