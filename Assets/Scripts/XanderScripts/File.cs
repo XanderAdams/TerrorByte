@@ -6,5 +6,15 @@ public class File : MonoBehaviour
 {
         public float size;
         public bool open;
-        public string name;
+        public string fileName;
+
+        void Active()
+        {
+
+        }
+
+        void Passive()
+        {
+            
+        }
 }
