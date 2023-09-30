@@ -6,7 +6,7 @@ using UnityEngine;
 public class BaseAttack : MonoBehaviour
 {
 
-
+    public Animator animator;
     // Update is called once per frame
 
 
@@ -18,9 +18,11 @@ public class BaseAttack : MonoBehaviour
         }
 
 
-        void Attack()
-        {
-            Debug.Log("Kill It White Boy");
-        }
+        
+    }
+
+    void Attack()
+    {
+        animator.SetTrigger("Attack");
     }
 }
