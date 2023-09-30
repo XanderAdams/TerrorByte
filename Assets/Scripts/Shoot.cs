@@ -1,5 +1,5 @@
-using UnityEngine;
 using Pathfinding;
+using UnityEngine;
 
 public class Shoot : MonoBehaviour
 {
@@ -14,13 +14,19 @@ public class Shoot : MonoBehaviour
     public AIPath aiPath;
     public LayerMask layer;
 
-    public float switchDelay = .5f;
-    float timer;
+    public float switchDelay = 1f;
+    float resetDelay;
 
     // Update is called once per frame
+
+    private void Start()
+    {
+        resetDelay = switchDelay;
+    }
     void Update()
     {
-        
+      
+
         Vector2 targetpos = target.position;
         Direction = targetpos - (Vector2)transform.position;
 
@@ -32,11 +38,11 @@ public class Shoot : MonoBehaviour
         {
             if (rayInfo.collider.CompareTag("Player"))
             {
-                timer += Time.deltaTime;
-                if (timer > switchDelay)
+                switchDelay -= Time.deltaTime;
+                if (switchDelay <= 0)
                 {
                     aiPath.endReachedDistance = 9f;
-
+                    switchDelay = resetDelay;
                 }
                 if (Time.time > nextFire)
                 {
@@ -66,6 +72,6 @@ public class Shoot : MonoBehaviour
         BulletIns.GetComponent<Rigidbody2D>().AddForce(Direction * bulletSpeed);
     }
 
-   
+
 
 }

@@ -17,6 +17,8 @@ public class EnemyAi : MonoBehaviour
     Seeker seeker;
     Rigidbody2D rb;
 
+    public float maxVelocity = 100;
+
 
     void Start()
     {
@@ -70,6 +72,6 @@ public class EnemyAi : MonoBehaviour
             currentWaypoint++;
         }
 
-        
+        rb.velocity = Vector2.ClampMagnitude(rb.velocity, maxVelocity);
     }
 }
