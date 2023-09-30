@@ -15,6 +15,14 @@ public class FileSystem : MonoBehaviour
     {
         files.RemoveAt(files.Count-1);
     }
+
+    void PrintList()
+    {
+        for(int i = 0; i < files.Count; i++)
+        {
+            Debug.Log(files[i].fileName);
+        }
+    }
     // Start is called before the first frame update
     void Start()
     {
