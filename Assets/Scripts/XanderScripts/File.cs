@@ -8,13 +8,13 @@ public class File : MonoBehaviour
         public bool open;
         public string fileName;
 
-        void Active()
+        public void Active()
         {
 
         }
 
-        void Passive()
+        public void Passive()
         {
-            
+
         }
 }
