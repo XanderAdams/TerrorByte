@@ -4,6 +4,17 @@ using UnityEngine;
 
 public class FileSystem : MonoBehaviour
 {
+    public List<File> files;
+
+    void AddFile(File file)
+    {
+        files.Add(file);
+    }
+
+    void PopFile()
+    {
+        
+    }
     // Start is called before the first frame update
     void Start()
     {
