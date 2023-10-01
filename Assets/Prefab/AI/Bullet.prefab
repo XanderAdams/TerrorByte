@@ -137,6 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 997b790f6bc064742b78704ab3ee7012, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  virus: {fileID: 4173596356451020232, guid: 1089e7970963a404195e321344422567, type: 3}
 --- !u!114 &1574622754527851543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -149,5 +150,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4249ff3b83c74d841a2b79d255ef7478, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  virus: {fileID: 0}
+  virus: {fileID: 4173596356451020232, guid: 1089e7970963a404195e321344422567, type: 3}
   power: 1

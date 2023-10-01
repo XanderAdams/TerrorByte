@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+    public TheKillsYouScript virus;
     private float bulletTime = 3;
     
 
@@ -21,6 +22,8 @@ public class Bullet : MonoBehaviour
     {
         if(collision.gameObject.tag == ("Player"))
         {
+            virus.Scan();
+            virus.Scan();
             Destroy(gameObject);
         }
 
@@ -28,5 +31,10 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    public void Awake()
+    {
+
+        virus = GameManager.Instance.gameObject.GetComponent<TheKillsYouScript>();
     }
 }
