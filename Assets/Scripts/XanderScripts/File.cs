@@ -8,6 +8,8 @@ public class File : ScriptableObject
         public float size;
         public bool open;
         public string fileName;
+        public Sprite fileSprite;
+        public int dropChance;
 
         public virtual void Active()
         {

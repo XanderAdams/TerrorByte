@@ -172,7 +172,7 @@ MonoBehaviour:
   currentTime: 5
   countDown: 1
   scanFrequency: 1
-  hasLimit: 0
+  hasLimit: 1
   timerLimit: 0
   virus: {fileID: 1993926727}
 --- !u!114 &158382953
@@ -306,7 +306,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   files: []
-  core: {fileID: 0}
+  core: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
   activate: 0
   endScreen: GameOver
 --- !u!4 &917675749
@@ -350,7 +350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   files: []
-  core: {fileID: 0}
+  core: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
   activate: 0
   endScreen: IGuessYou'llDIE
 --- !u!1 &1418555229
@@ -462,6 +462,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
   - {fileID: 11400000, guid: fd163c7c34ed97347a98e0a84404ccb1, type: 2}
   - {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
+  - {fileID: 11400000, guid: 704592a844fe5a14a9a8f4f3d06b03c1, type: 2}
+  - {fileID: 11400000, guid: 704592a844fe5a14a9a8f4f3d06b03c1, type: 2}
+  - {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
+  - {fileID: 11400000, guid: e56bce0b1a2cb334fa239f92ea57561d, type: 2}
+  - {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
+  - {fileID: 11400000, guid: e56bce0b1a2cb334fa239f92ea57561d, type: 2}
   - {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
   core: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
   activate: 0
@@ -492,6 +498,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 0}
+  attackPoint: {fileID: 0}
+  attackRange: 0.5
+  enemyLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  attackDamage: 5
 --- !u!95 &1993926729
 Animator:
   serializedVersion: 5
