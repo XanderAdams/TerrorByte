@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New File", menuName = "Upgrade File")]
+[CreateAssetMenu(fileName = "NewFile", menuName = "UpgradeFile/Health")]
 public class File : ScriptableObject
 {
         public float size;

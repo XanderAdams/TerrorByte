@@ -43,7 +43,7 @@ public class FileSystem : MonoBehaviour
         File current;
         if(gameObject.GetComponent<MovementTopDown>()!=null)
         {
-            //gameObject.GetComponent<MovementTopDown>().moveSpeed = 0;
+            gameObject.GetComponent<MovementTopDown>().moveSpeed = 0;
         }
         for(int i = 0; i < files.Count; i++)
         {

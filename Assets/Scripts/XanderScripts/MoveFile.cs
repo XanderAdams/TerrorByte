@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[CreateAssetMenu(fileName = "New File", menuName = "UpgradeFile/Move")]
 public class MoveFile : File
 {
     
