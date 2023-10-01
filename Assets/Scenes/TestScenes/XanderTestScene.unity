@@ -438,7 +438,6 @@ GameObject:
   - component: {fileID: 1993926728}
   - component: {fileID: 1993926727}
   - component: {fileID: 1993926726}
-  - component: {fileID: 1993926724}
   m_Layer: 0
   m_Name: Square
   m_TagString: Player
@@ -446,27 +445,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1993926724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1993926723}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 743526765b36676419aafbd951475f82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  files:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  core: {fileID: 0}
-  activate: 0
-  endScreen: IGuessYou'llDIE
 --- !u!114 &1993926726
 MonoBehaviour:
   m_ObjectHideFlags: 0
