@@ -49,7 +49,7 @@ public class FileSystem : MonoBehaviour
         if(player.GetComponent<BaseAttack>()!=null)
         {
             player.GetComponent<BaseAttack>().attackDamage = 1;
-            player.GetComponent<BaseAttack>().attackRange = 0.5f;
+            player.GetComponent<BaseAttack>().attackRange = 2.0f;
         }
         for(int i = 0; i < files.Count; i++)
         {
