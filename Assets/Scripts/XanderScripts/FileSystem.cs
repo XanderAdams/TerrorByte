@@ -41,8 +41,14 @@ public class FileSystem : MonoBehaviour
     public void ActivateEffects()
     {
         File current;
+        GameObject player = GameObject.FindWithTag("Player");
+        if(player.GetComponent<MovementTopDown>()!=null)
+        {
+            player.GetComponent<MovementTopDown>().moveSpeed = 0;
+        }
         for(int i = 0; i < files.Count; i++)
         {
+            Debug.Log(i);
             current = files[i];
             current.Passive();
 
@@ -68,6 +74,6 @@ public class FileSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        ActivateEffects();
     }
 }

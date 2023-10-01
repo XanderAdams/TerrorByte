@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 969928177471909257}
   - component: {fileID: 969928177471909256}
   - component: {fileID: 969928177471909271}
-  - component: {fileID: 969928177471909268}
+  - component: {fileID: 5892081838499256320}
   m_Layer: 0
   m_Name: File
   m_TagString: Untagged
@@ -126,8 +126,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   listfolder: {fileID: 0}
-  pickup: {fileID: 969928177471909268}
---- !u!114 &969928177471909268
+  pickup: {fileID: 0}
+--- !u!114 &5892081838499256320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,9 +136,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3292099953290149790}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b28c36a5b8e1e6438750c19c5c02100, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e2fc07220d08e84bac30ca51cba8084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  size: 2
-  open: 0
-  fileName: 
+  file: {fileID: 0}

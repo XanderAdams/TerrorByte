@@ -2,19 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class File : MonoBehaviour
+[CreateAssetMenu(fileName = "NewFile", menuName = "UpgradeFile/Health")]
+public class File : ScriptableObject
 {
         public float size;
         public bool open;
         public string fileName;
 
-        public void Active()
+        public virtual void Active()
         {
 
         }
 
-        public void Passive()
+        public virtual void Passive()
         {
-
+            //Debug.Log("Passive");
         }
 }

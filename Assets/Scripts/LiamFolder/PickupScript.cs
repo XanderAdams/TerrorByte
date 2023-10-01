@@ -5,7 +5,7 @@ using System.IO;
 using UnityEngine;
 
 
-[RequireComponent(typeof(File))]
+[RequireComponent(typeof(FileHolder))]
 
 public class PickupScript : MonoBehaviour
 {
@@ -24,6 +24,6 @@ public class PickupScript : MonoBehaviour
     }
    void Awake()
     {
-        pickup = gameObject.GetComponent<File>();
+        pickup = gameObject.GetComponent<FileHolder>().file;
     }
 }
