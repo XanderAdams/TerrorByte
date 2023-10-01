@@ -16,18 +16,21 @@ public class EnemyDash : MonoBehaviour
     public GameObject summon;
     public float launchSpeed = 10f;
     public float Range;
-    public float numSummons = 2;
+    public float summonRate = 1f;
+    float nextSummon;
+    private float currentLoop = 0;
+    private float maxLoop = 1;
 
     bool canDash = true;
 
 
-     float dashTime = 0f;
+    float dashTime = 0f;
     public float dashTimeMax = 5f;
-     float dashCooldown = 0f;
+    float dashCooldown = 0f;
     public float maxCooldown = 10f;
-     float insight = 0f;
+    float insight = 0f;
     public float insightMax = 1f;
-     float charge = 0f;
+    float charge = 0f;
     public float chargeMax = 2f;
 
 
@@ -36,7 +39,7 @@ public class EnemyDash : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -75,13 +78,16 @@ public class EnemyDash : MonoBehaviour
         {
             Debug.Log("Dash");
             Dash();
-            for(int i = 0; 1 < numSummons; i++)
-            {
-                shoot();
-            }
+
+            
+
         }
+
+        
+        
     }
 
+    
     void shoot()
     {
         GameObject BulletIns = Instantiate(summon, launchPoint.position, Quaternion.identity);
@@ -126,16 +132,27 @@ public class EnemyDash : MonoBehaviour
                     canDash = false;
                     charge = 0f;
                     dashTime = 0f;
-                    
+
+                    if (currentLoop <= maxLoop)
+                    {
+                        Debug.Log("summon");
+                        shoot();
+                        currentLoop += 1;
+                    }
+                    currentLoop = 0;
 
                 }
             }
-            
+
             Debug.Log("Finished");
 
             gameObject.GetComponent<AIDestinationSetter>().enabled = true;
 
-            Debug.Log(ai.maxSpeed);
+            
+
+
         }
+
+
     }
 }
