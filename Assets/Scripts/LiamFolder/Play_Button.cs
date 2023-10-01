@@ -8,7 +8,7 @@ public class Play_Button : MonoBehaviour
     public void PlayGame()
     {
        
-        SceneManager.LoadScene(sceneName: "Liam_Scene");
+        SceneManager.LoadScene(sceneName: "1");
     }
 
     public void QuitGame()
