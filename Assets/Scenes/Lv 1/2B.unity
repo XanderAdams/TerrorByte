@@ -156,7 +156,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
     - target: {fileID: 1833063443956770481, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: maxHealth
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2993861619762909671, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: target
@@ -1459,7 +1459,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 130834335, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
       propertyPath: maxHealth
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3783175553579461202, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
       propertyPath: m_RootOrder
@@ -1698,7 +1698,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
     - target: {fileID: 1833063443956770481, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: maxHealth
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2993861619762909671, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: target

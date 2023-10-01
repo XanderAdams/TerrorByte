@@ -764,7 +764,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 594e670444156484b9b4d513448d644d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
+  maxHealth: 5
   currentHealth: 0
 --- !u!114 &595708493
 MonoBehaviour:
@@ -1748,7 +1748,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 594e670444156484b9b4d513448d644d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 2
+  maxHealth: 5
   currentHealth: 0
 --- !u!114 &1796362735
 MonoBehaviour:
@@ -2775,8 +2775,6 @@ MonoBehaviour:
   layer:
     serializedVersion: 2
     m_Bits: 81920
-  virus: {fileID: 0}
-  power: 1
   switchDelay: 0.3
 --- !u!1 &6036722525740653065
 GameObject:
@@ -2908,7 +2906,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 594e670444156484b9b4d513448d644d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 3
+  maxHealth: 5
   currentHealth: 0
 --- !u!114 &8158113689537395893
 MonoBehaviour:

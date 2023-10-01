@@ -229,7 +229,7 @@ Camera:
   far clip plane: 1000
   field of view: 66.8
   orthographic: 1
-  orthographic size: 7.4055247
+  orthographic size: 11
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -928,7 +928,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 130834335, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
       propertyPath: maxHealth
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3783175553579461202, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
       propertyPath: m_RootOrder
@@ -1168,7 +1168,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
     - target: {fileID: 1833063443956770481, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: maxHealth
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2993861619762909671, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: virus
@@ -1902,7 +1902,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
     - target: {fileID: 1833063443956770481, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: maxHealth
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2993861619762909671, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: virus
@@ -1991,7 +1991,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 130834335, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
       propertyPath: maxHealth
-      value: 2
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3783175553579461202, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
       propertyPath: m_RootOrder
@@ -2309,7 +2309,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
     - target: {fileID: 1833063443956770481, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: maxHealth
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2993861619762909671, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: virus
@@ -2563,7 +2563,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
     - target: {fileID: 1833063443956770481, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: maxHealth
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 2993861619762909671, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: virus
@@ -2650,6 +2650,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 289168969}
     m_Modifications:
+    - target: {fileID: 513916952328859390, guid: 099a6d9c0b5038a428a6e2bb6343f53e, type: 3}
+      propertyPath: maxHealth
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2127550704107685248, guid: 099a6d9c0b5038a428a6e2bb6343f53e, type: 3}
       propertyPath: m_RootOrder
       value: 1
