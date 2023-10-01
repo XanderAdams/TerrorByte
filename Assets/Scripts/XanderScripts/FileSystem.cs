@@ -46,6 +46,11 @@ public class FileSystem : MonoBehaviour
         {
             player.GetComponent<MovementTopDown>().moveSpeed = 0;
         }
+        if(player.GetComponent<BaseAttack>()!=null)
+        {
+            player.GetComponent<BaseAttack>().attackDamage = 1;
+            player.GetComponent<BaseAttack>().attackRange = 0.5f;
+        }
         for(int i = 0; i < files.Count; i++)
         {
             Debug.Log(i);
