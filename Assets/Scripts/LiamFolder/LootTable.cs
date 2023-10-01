@@ -37,6 +37,7 @@ public class LootTable : MonoBehaviour
         File droppedItem = GetDroppedItem();
         if( droppedItem != null )
         {   droppedItemPrefab.GetComponent<FileHolder>().file = droppedItem;
+            droppedItemPrefab.GetComponent<SpriteRenderer>().color = droppedItem.newColor;
             GameObject fileGameObject = Instantiate(droppedItemPrefab, spawnPositon, Quaternion.identity);
             fileGameObject.GetComponent<SpriteRenderer>().sprite = droppedItem.fileSprite;
         }

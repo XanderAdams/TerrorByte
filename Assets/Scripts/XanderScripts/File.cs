@@ -9,6 +9,7 @@ public class File : ScriptableObject
         public bool open;
         public string fileName;
         public Sprite fileSprite;
+        public Color newColor;
         public int dropChance;
 
         public virtual void Active()
