@@ -13,8 +13,7 @@ public class Shoot : MonoBehaviour
     float nextFire;
     public AIPath aiPath;
     public LayerMask layer;
-    public TheKillsYouScript virus;
-    public int power = 1;
+
 
     public float switchDelay = 1f;
     float resetDelay;
