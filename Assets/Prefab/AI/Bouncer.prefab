@@ -13,9 +13,12 @@ GameObject:
   - component: {fileID: 3783175553579461289}
   - component: {fileID: 3783175553579461207}
   - component: {fileID: 3783175553579461291}
+  - component: {fileID: 130834329}
+  - component: {fileID: 130834335}
+  - component: {fileID: 130834336}
   m_Layer: 15
   m_Name: Bouncer
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,7 +30,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3783175553579461203}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.12, y: -4.04, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -48,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b950520c7d5afdd4d8938f3f32f8cdd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 2320512133519976888, guid: 3dccedf85cd2d4b46a70a20d443355b8, type: 3}
   speed: 100
   nextWaypointDistance: 3
   maxVelocity: 100
@@ -117,6 +120,53 @@ MonoBehaviour:
   tagPenalties: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   graphMask:
     value: 1
+--- !u!114 &130834329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3783175553579461203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4249ff3b83c74d841a2b79d255ef7478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virus: {fileID: 4173596356451020232, guid: 1089e7970963a404195e321344422567, type: 3}
+  power: 2
+--- !u!114 &130834335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3783175553579461203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594e670444156484b9b4d513448d644d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 0
+--- !u!114 &130834336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3783175553579461203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b38894517d24646a1e580fac0c2652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppedItemPrefab: {fileID: 59977985733821931, guid: 56fce096b758f5141bd3f7cc39780874, type: 3}
+  lootList:
+  - {fileID: 11400000, guid: fd163c7c34ed97347a98e0a84404ccb1, type: 2}
+  - {fileID: 11400000, guid: 704592a844fe5a14a9a8f4f3d06b03c1, type: 2}
+  - {fileID: 11400000, guid: e56bce0b1a2cb334fa239f92ea57561d, type: 2}
+  - {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
+  - {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
 --- !u!1 &3783175553591663584
 GameObject:
   m_ObjectHideFlags: 0

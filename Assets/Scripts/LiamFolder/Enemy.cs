@@ -6,7 +6,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour
 {
     public int maxHealth = 5;
-    int currentHealth;
+    public int currentHealth;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,6 +25,7 @@ public class Enemy : MonoBehaviour
     }
     void Die()
     {
+        GetComponent<LootTable>().InstantiateFile(transform.position);
         Destroy(gameObject);
     }
 }

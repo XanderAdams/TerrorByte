@@ -15,6 +15,6 @@ MonoBehaviour:
   size: 2
   open: 0
   fileName: 
-  fileSprite: {fileID: 0}
-  dropChance: 0
+  fileSprite: {fileID: -722268726, guid: 133409b037cbd2040ac2d229398ef11f, type: 3}
+  dropChance: 80
   range: 2

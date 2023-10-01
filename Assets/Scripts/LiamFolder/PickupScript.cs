@@ -19,11 +19,12 @@ public class PickupScript : MonoBehaviour
         if(other.tag == "Player")
         {
             listfolder.AddFile(pickup);
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }   
     }
    void Awake()
     {
         pickup = gameObject.GetComponent<FileHolder>().file;
+        listfolder = GameObject.FindWithTag("GameManager").GetComponent<FileSystem>();
     }
 }

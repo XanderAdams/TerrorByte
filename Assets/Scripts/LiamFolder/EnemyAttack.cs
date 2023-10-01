@@ -19,7 +19,12 @@ public class EnemyAttack : MonoBehaviour
             Debug.Log("Hit");
         }
 
-
         
+        
+    }
+    public void Awake()
+    {
+
+        virus = GameManager.Instance.gameObject.GetComponent<TheKillsYouScript>();
     }
 }
