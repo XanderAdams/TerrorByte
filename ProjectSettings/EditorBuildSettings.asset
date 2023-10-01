@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestScenes/GameOver.unity
     guid: 189c1f92a405b1b4b86ce4e5de8eb3eb
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/Garrettv2.unity
+    guid: 12732f6640ccbf5458f03c4e1c705023
+  - enabled: 1
+    path: Assets/Scenes/TestScenes/GarrettScene.unity
+    guid: 8d663cf24cb4a4243b559ccec15e6bee
   m_configObjects: {}
