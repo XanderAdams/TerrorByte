@@ -4,13 +4,13 @@ using UnityEngine.SceneManagement;
 
 public class Pathways : MonoBehaviour
 {
-
+    public string sceneName;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == ("Player"))
         {
             Debug.Log("sceneloader");
-            SceneManager.LoadScene("GarrettScene");
+            SceneManager.LoadScene(sceneName);
         }
     }
     private void Update()
