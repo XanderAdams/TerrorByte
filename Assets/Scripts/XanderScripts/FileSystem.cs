@@ -41,9 +41,10 @@ public class FileSystem : MonoBehaviour
     public void ActivateEffects()
     {
         File current;
-        if(gameObject.GetComponent<MovementTopDown>()!=null)
+        GameObject player = GameObject.FindWithTag("Player");
+        if(player.GetComponent<MovementTopDown>()!=null)
         {
-            gameObject.GetComponent<MovementTopDown>().moveSpeed = 0;
+            player.GetComponent<MovementTopDown>().moveSpeed = 0;
         }
         for(int i = 0; i < files.Count; i++)
         {
