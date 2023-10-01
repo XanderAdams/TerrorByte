@@ -10,6 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 2993861618481822988}
   - component: {fileID: 2993861618481822979}
+  - component: {fileID: 5686655518413354085}
+  - component: {fileID: 6746703620972427003}
+  - component: {fileID: 8597346212464898198}
   m_Layer: 15
   m_Name: SmEnGFX
   m_TagString: Untagged
@@ -84,6 +87,48 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5686655518413354085
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993861618481822989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4249ff3b83c74d841a2b79d255ef7478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virus: {fileID: 0}
+  power: 1
+--- !u!114 &6746703620972427003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993861618481822989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b38894517d24646a1e580fac0c2652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppedItemPrefab: {fileID: 0}
+  lootList: []
+--- !u!114 &8597346212464898198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993861618481822989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594e670444156484b9b4d513448d644d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 0
 --- !u!1 &2993861619633688978
 GameObject:
   m_ObjectHideFlags: 0
@@ -130,6 +175,9 @@ GameObject:
   - component: {fileID: 2993861619762909666}
   - component: {fileID: 2993861619762909665}
   - component: {fileID: 2993861619762909671}
+  - component: {fileID: 1833063443956770481}
+  - component: {fileID: -8395383373109954770}
+  - component: {fileID: -8244326168700962715}
   m_Layer: 15
   m_Name: Ranged
   m_TagString: Enemy
@@ -298,3 +346,45 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 81920
   switchDelay: 0.3
+--- !u!114 &1833063443956770481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993861619762909672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594e670444156484b9b4d513448d644d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 0
+--- !u!114 &-8395383373109954770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993861619762909672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4249ff3b83c74d841a2b79d255ef7478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virus: {fileID: 0}
+  power: 1
+--- !u!114 &-8244326168700962715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2993861619762909672}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b38894517d24646a1e580fac0c2652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppedItemPrefab: {fileID: 0}
+  lootList: []

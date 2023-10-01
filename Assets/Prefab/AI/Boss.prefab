@@ -99,6 +99,9 @@ GameObject:
   - component: {fileID: 2127550704107685249}
   - component: {fileID: 2127550704107685261}
   - component: {fileID: 2127550704107685260}
+  - component: {fileID: -362795550611169847}
+  - component: {fileID: 513916952328859390}
+  - component: {fileID: 6929973464289611741}
   m_Layer: 15
   m_Name: Boss
   m_TagString: Untagged
@@ -163,7 +166,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  target: {fileID: 0}
+  target: {fileID: 2320512133519976888, guid: 3dccedf85cd2d4b46a70a20d443355b8, type: 3}
 --- !u!114 &2127550704107685262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,6 +274,49 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &-362795550611169847
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127550704107685251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4249ff3b83c74d841a2b79d255ef7478, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  virus: {fileID: 4173596356451020232, guid: 1089e7970963a404195e321344422567, type: 3}
+  power: 1
+--- !u!114 &513916952328859390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127550704107685251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 594e670444156484b9b4d513448d644d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 5
+  currentHealth: 0
+--- !u!114 &6929973464289611741
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2127550704107685251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48b38894517d24646a1e580fac0c2652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  droppedItemPrefab: {fileID: 59977985733821931, guid: 56fce096b758f5141bd3f7cc39780874, type: 3}
+  lootList:
+  - {fileID: 11400000, guid: 704592a844fe5a14a9a8f4f3d06b03c1, type: 2}
 --- !u!1 &5848808057013643977
 GameObject:
   m_ObjectHideFlags: 0
