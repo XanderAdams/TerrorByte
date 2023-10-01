@@ -25,12 +25,12 @@ public class BackgroundMusic : MonoBehaviour
         if (playing == false)
         {
             playing = true;
-            AudioManager.Instance.Play(song, manager);
+            AudioManagerX.Instance.Play(song, manager);
         }
         else
         {
             playing = false;
-            AudioManager.Instance.Stop(song);
+            AudioManagerX.Instance.Stop(song);
         }
     }
 }
