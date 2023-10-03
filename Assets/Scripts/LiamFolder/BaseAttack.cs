@@ -33,7 +33,7 @@ public class BaseAttack : MonoBehaviour
 
         foreach(Collider2D enemy in hitEnemies)
         {
-            Debug.Log("Enemy: " + enemy.gameObject.name);
+            //Debug.Log("Enemy: " + enemy.gameObject.name);
             enemy.gameObject.GetComponent<Enemy>().TakeDamage(attackDamage);
         }
     }
