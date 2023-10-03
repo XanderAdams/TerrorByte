@@ -27,7 +27,7 @@ public class FileSystem : MonoBehaviour
         
         if(!files.Contains(core))
         {
-            Debug.Log("DIE");
+            Debug.Log("DIE" + gameObject.name +core.fileName + "NotFound");
             DIE();
         }
         
