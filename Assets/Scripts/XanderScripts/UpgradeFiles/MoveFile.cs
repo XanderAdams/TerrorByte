@@ -10,7 +10,7 @@ public class MoveFile : File
 
     public override void Passive()
     {
-        Debug.Log("Passive");
+        //Debug.Log("Passive");
         if(GameObject.FindWithTag("Player").GetComponent<MovementTopDown>()!=null)
         {
             GameObject.FindWithTag("Player").GetComponent<MovementTopDown>().moveSpeed = baseSpeed;

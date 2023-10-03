@@ -58,7 +58,7 @@ public class FileSystem : MonoBehaviour
             }
             for (int i = 0; i < files.Count; i++)
             {
-                Debug.Log(i);
+                //Debug.Log(i);
                 current = files[i];
                 current.Passive();
 

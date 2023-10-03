@@ -10,7 +10,7 @@ public class AttackPowerUpFile : File
 
     public override void Passive()
     {
-        Debug.Log("Passive");
+        //Debug.Log("Passive");
         if(GameObject.FindWithTag("Player").GetComponent<BaseAttack>()!=null)
         {
             GameObject.FindWithTag("Player").GetComponent<BaseAttack>().attackDamage *= power;

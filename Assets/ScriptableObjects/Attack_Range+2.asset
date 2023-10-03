@@ -9,13 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 076de5b07fdd3ed47a85bfe408864cc6, type: 3}
-  m_Name: Speed_5X
+  m_Script: {fileID: 11500000, guid: a7bfac2660d6b0049abd7e37d974a39f, type: 3}
+  m_Name: Attack_Range+2
   m_EditorClassIdentifier: 
-  size: 4
+  size: 3
   open: 0
-  fileName: Speed_5X
+  fileName: AttackRangePlus2
   fileSprite: {fileID: 21300000, guid: ee86ae4a10fa3de499d09c635d3668b5, type: 3}
-  newColor: {r: 0, g: 1, b: 0.9824562, a: 1}
-  dropChance: 1
-  baseSpeed: 5
+  newColor: {r: 0.6792453, g: 0.56140184, b: 0.008971129, a: 1}
+  dropChance: 80
+  range: 2

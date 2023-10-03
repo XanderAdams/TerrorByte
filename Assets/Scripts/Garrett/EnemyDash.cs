@@ -91,6 +91,7 @@ public class EnemyDash : MonoBehaviour
     void shoot()
     {
         GameObject BulletIns = Instantiate(summon, launchPoint.position, Quaternion.identity);
+        BulletIns.SetActive(true);
         BulletIns.GetComponent<Rigidbody2D>().AddForce(Direction * launchSpeed);
     }
 
