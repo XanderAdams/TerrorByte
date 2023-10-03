@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New File", menuName = "UpgradeFile/Move/Speed")]
+[CreateAssetMenu(fileName = "New File", menuName = "UpgradeFile/Move/Speed/Times")]
 public class SpeedUpFile : File
 {
     

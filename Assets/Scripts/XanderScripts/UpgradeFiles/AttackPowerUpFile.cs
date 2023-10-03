@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New File", menuName = "UpgradeFile/Attack/Power")]
+[CreateAssetMenu(fileName = "New File", menuName = "UpgradeFile/Attack/Power/Times")]
 public class AttackPowerUpFile : File
 {
     

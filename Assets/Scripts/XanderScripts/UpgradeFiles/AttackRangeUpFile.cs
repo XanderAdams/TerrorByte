@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New File", menuName = "UpgradeFile/Attack/Range")]
+[CreateAssetMenu(fileName = "New File", menuName = "UpgradeFile/Attack/Range/Times")]
 public class AttackRangeUpFile : File
 {
     
