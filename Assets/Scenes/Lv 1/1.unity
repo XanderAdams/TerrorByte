@@ -396,6 +396,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4173596356451020233, guid: 1089e7970963a404195e321344422567, type: 3}
+      propertyPath: hasLimit
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4173596356451020235, guid: 1089e7970963a404195e321344422567, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -450,7 +454,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4173596356451020238, guid: 1089e7970963a404195e321344422567, type: 3}
       propertyPath: endScreen
-      value: ' I Geuss You''ll DIE'
+      value: IGuessYou'llDIE
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1089e7970963a404195e321344422567, type: 3}
