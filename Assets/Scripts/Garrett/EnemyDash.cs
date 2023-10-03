@@ -111,7 +111,7 @@ public class EnemyDash : MonoBehaviour
         {
             Debug.Log("speedup");
 
-            ai.maxSpeed = 10;
+            ai.maxSpeed = 25;
 
             Debug.Log("Test");
             Debug.Log(ai.maxSpeed);

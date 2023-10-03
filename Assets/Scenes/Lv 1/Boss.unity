@@ -1138,34 +1138,6 @@ PrefabInstance:
       propertyPath: virus
       value: 
       objectReference: {fileID: 2003746426}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: droppedItemPrefab
-      value: 
-      objectReference: {fileID: 59977985733821931, guid: 56fce096b758f5141bd3f7cc39780874, type: 3}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: fd163c7c34ed97347a98e0a84404ccb1, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 704592a844fe5a14a9a8f4f3d06b03c1, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: e56bce0b1a2cb334fa239f92ea57561d, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
     - target: {fileID: 1833063443956770481, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: maxHealth
       value: 5
@@ -1877,34 +1849,6 @@ PrefabInstance:
       propertyPath: virus
       value: 
       objectReference: {fileID: 2003746426}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: droppedItemPrefab
-      value: 
-      objectReference: {fileID: 59977985733821931, guid: 56fce096b758f5141bd3f7cc39780874, type: 3}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: fd163c7c34ed97347a98e0a84404ccb1, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 704592a844fe5a14a9a8f4f3d06b03c1, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: e56bce0b1a2cb334fa239f92ea57561d, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
     - target: {fileID: 1833063443956770481, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: maxHealth
       value: 5
@@ -2284,34 +2228,6 @@ PrefabInstance:
       propertyPath: virus
       value: 
       objectReference: {fileID: 2003746426}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: droppedItemPrefab
-      value: 
-      objectReference: {fileID: 59977985733821931, guid: 56fce096b758f5141bd3f7cc39780874, type: 3}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: fd163c7c34ed97347a98e0a84404ccb1, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 704592a844fe5a14a9a8f4f3d06b03c1, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: e56bce0b1a2cb334fa239f92ea57561d, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
     - target: {fileID: 1833063443956770481, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: maxHealth
       value: 5
@@ -2538,34 +2454,6 @@ PrefabInstance:
       propertyPath: virus
       value: 
       objectReference: {fileID: 2003746426}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: droppedItemPrefab
-      value: 
-      objectReference: {fileID: 59977985733821931, guid: 56fce096b758f5141bd3f7cc39780874, type: 3}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: fd163c7c34ed97347a98e0a84404ccb1, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: 704592a844fe5a14a9a8f4f3d06b03c1, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: e56bce0b1a2cb334fa239f92ea57561d, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
-    - target: {fileID: -8244326168700962715, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
-      propertyPath: lootList.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
     - target: {fileID: 1833063443956770481, guid: 8cb4d54fabc2c47489f502c3560d7060, type: 3}
       propertyPath: maxHealth
       value: 5
@@ -2655,6 +2543,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 289168969}
     m_Modifications:
+    - target: {fileID: -362795550611169847, guid: 099a6d9c0b5038a428a6e2bb6343f53e, type: 3}
+      propertyPath: power
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 513916952328859390, guid: 099a6d9c0b5038a428a6e2bb6343f53e, type: 3}
       propertyPath: maxHealth
       value: 50

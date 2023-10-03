@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b28c36a5b8e1e6438750c19c5c02100, type: 3}
   m_Name: Health
   m_EditorClassIdentifier: 
-  size: 4
+  size: 6
   open: 0
   fileName: Health
   fileSprite: {fileID: 21300000, guid: ee86ae4a10fa3de499d09c635d3668b5, type: 3}
