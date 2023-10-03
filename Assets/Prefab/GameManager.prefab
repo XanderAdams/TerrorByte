@@ -63,7 +63,7 @@ MonoBehaviour:
   currentTime: 5
   countDown: 1
   scanFrequency: 1
-  hasLimit: 0
+  hasLimit: 1
   timerLimit: 0
   virus: {fileID: 4173596356451020232}
 --- !u!114 &4173596356451020238
@@ -87,7 +87,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
   core: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
   activate: 0
-  endScreen: GameOver
+  endScreen: IGuessYou'llDIE
 --- !u!114 &4173596356451020239
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -15,7 +15,7 @@ public class FileSystem : MonoBehaviour
     {
         files.Add(file);
 
-        gameObject.GetComponent<FileCount>().UpdateFile();
+       
     }
 
     public void PopFile()
@@ -30,7 +30,7 @@ public class FileSystem : MonoBehaviour
             Debug.Log("DIE");
             DIE();
         }
-        gameObject.GetComponent<FileCount>().UpdateFile();
+        
     }
 
     public void PrintList()
