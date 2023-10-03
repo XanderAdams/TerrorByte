@@ -15,6 +15,7 @@ MonoBehaviour:
   size: 2
   open: 0
   fileName: 
-  fileSprite: {fileID: -722268726, guid: 133409b037cbd2040ac2d229398ef11f, type: 3}
+  fileSprite: {fileID: 21300000, guid: ee86ae4a10fa3de499d09c635d3668b5, type: 3}
+  newColor: {r: 0.8396226, g: 0.75881517, b: 0, a: 1}
   dropChance: 80
   range: 2

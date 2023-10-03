@@ -9,13 +9,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ce0173a9ef6775d4681e608e5515d2f4, type: 3}
-  m_Name: Move
+  m_Script: {fileID: 11500000, guid: 9b28c36a5b8e1e6438750c19c5c02100, type: 3}
+  m_Name: CORE
   m_EditorClassIdentifier: 
-  size: 2
+  size: 1
   open: 0
-  fileName: Movement
+  fileName: Core
   fileSprite: {fileID: 21300000, guid: ee86ae4a10fa3de499d09c635d3668b5, type: 3}
-  newColor: {r: 0.8396226, g: 0, b: 0.52741575, a: 0}
+  newColor: {r: 1, g: 1, b: 1, a: 1}
   dropChance: 0
-  baseSpeed: 5

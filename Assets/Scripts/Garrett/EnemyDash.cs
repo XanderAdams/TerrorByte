@@ -24,13 +24,13 @@ public class EnemyDash : MonoBehaviour
     bool canDash = true;
 
 
-    float dashTime = 0f;
+    public float dashTime = 0f;
     public float dashTimeMax = 5f;
-    float dashCooldown = 0f;
+    public float dashCooldown = 0f;
     public float maxCooldown = 10f;
-    float insight = 0f;
+    public float insight = 0f;
     public float insightMax = 1f;
-    float charge = 0f;
+    public float charge = 0f;
     public float chargeMax = 2f;
 
 
@@ -48,7 +48,7 @@ public class EnemyDash : MonoBehaviour
         Vector2 targetpos = target.position;
         Direction = targetpos - (Vector2)transform.position;
 
-        RaycastHit2D rayInfo = Physics2D.Raycast(transform.position, Direction, range, layer);
+        RaycastHit2D rayInfo = Physics2D.Raycast(transform.position, Direction, 100, layer);
         Debug.DrawRay(transform.position, Direction);
 
         if (dashCooldown <= maxCooldown)

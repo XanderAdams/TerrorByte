@@ -16,4 +16,5 @@ MonoBehaviour:
   open: 0
   fileName: Health
   fileSprite: {fileID: 21300000, guid: ee86ae4a10fa3de499d09c635d3668b5, type: 3}
+  newColor: {r: 0, g: 0.7735849, b: 0.0000986738, a: 0}
   dropChance: 80
