@@ -44,25 +44,28 @@ public class FileSystem : MonoBehaviour
     public void ActivateEffects()
     {
         File current;
-        GameObject player = GameObject.FindWithTag("Player");
-        if(player.GetComponent<MovementTopDown>()!=null)
+        if (GameObject.FindWithTag("Player") != null) 
         {
-            player.GetComponent<MovementTopDown>().moveSpeed = 0;
-        }
-        if(player.GetComponent<BaseAttack>()!=null)
-        {
-            player.GetComponent<BaseAttack>().attackDamage = 1;
-            player.GetComponent<BaseAttack>().attackRange = 2.0f;
-        }
-        for(int i = 0; i < files.Count; i++)
-        {
-            Debug.Log(i);
-            current = files[i];
-            current.Passive();
-
-            if(current.open && activate)
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player.GetComponent<MovementTopDown>() != null)
             {
-                current.Active();
+                player.GetComponent<MovementTopDown>().moveSpeed = 0;
+            }
+            if (player.GetComponent<BaseAttack>() != null)
+            {
+                player.GetComponent<BaseAttack>().attackDamage = 1;
+                player.GetComponent<BaseAttack>().attackRange = 2.0f;
+            }
+            for (int i = 0; i < files.Count; i++)
+            {
+                Debug.Log(i);
+                current = files[i];
+                current.Passive();
+
+                if (current.open && activate)
+                {
+                    current.Active();
+                }
             }
         }
     }

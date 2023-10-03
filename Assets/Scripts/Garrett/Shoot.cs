@@ -34,7 +34,7 @@ public class Shoot : MonoBehaviour
         RaycastHit2D rayInfo = Physics2D.Raycast(transform.position, Direction, Range, layer);
         Debug.DrawRay(transform.position, Direction);
 
-        Debug.Log("Hit" + rayInfo.collider.gameObject.name);
+        //Debug.Log("Hit" + rayInfo.collider.gameObject.name);
         if (rayInfo)
         {
             if (rayInfo.collider.CompareTag("Player"))
