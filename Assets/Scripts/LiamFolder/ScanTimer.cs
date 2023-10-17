@@ -1,9 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ScanTimer : MonoBehaviour
 {
+    [Header("Component")]
+    public TextMeshProUGUI timerText;
+
     [Header("Timer Setting")]
     public float currentTime;
     public bool countDown;
@@ -21,10 +25,16 @@ public class ScanTimer : MonoBehaviour
 
         if (hasLimit && ((countDown && currentTime <= timerLimit) || (!countDown && currentTime >= timerLimit)))
         {
+            SetTimerText();
             virus.Scan();
         }
         if(currentTime <= 0) {
         currentTime = scanFrequency;
         }
+        SetTimerText();
+    }
+    private void SetTimerText()
+    {
+        timerText.text = currentTime.ToString("0.0000000");
     }
 }
