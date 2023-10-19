@@ -2084,30 +2084,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 130834336, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
-      propertyPath: lootList.Array.size
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 130834336, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
-      propertyPath: lootList.Array.data[0]
-      value: 
-      objectReference: {fileID: 11400000, guid: 704592a844fe5a14a9a8f4f3d06b03c1, type: 2}
-    - target: {fileID: 130834336, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
-      propertyPath: lootList.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: e56bce0b1a2cb334fa239f92ea57561d, type: 2}
-    - target: {fileID: 130834336, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
-      propertyPath: lootList.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
-    - target: {fileID: 130834336, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
-      propertyPath: lootList.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: 426fbe63d37215a49b2d1d89126e33e1, type: 2}
-    - target: {fileID: 130834336, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
-      propertyPath: lootList.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: fd163c7c34ed97347a98e0a84404ccb1, type: 2}
     - target: {fileID: 3783175553579461202, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
       propertyPath: m_RootOrder
       value: 8
