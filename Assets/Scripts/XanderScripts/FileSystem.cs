@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class FileSystem : MonoBehaviour
 {
+    [Header("Component")]
+    public TextMeshProUGUI fileCountText;
+    
     public List<File> files;
     public File core;
     public bool activate;
@@ -14,7 +19,7 @@ public class FileSystem : MonoBehaviour
     public void AddFile(File file)
     {
         files.Add(file);
-
+        SetFileText();
        
     }
 
@@ -30,7 +35,8 @@ public class FileSystem : MonoBehaviour
             Debug.Log("DIE" + gameObject.name +core.fileName + "NotFound");
             DIE();
         }
-        
+        SetFileText();
+
     }
 
     public void PrintList()
@@ -77,6 +83,12 @@ public class FileSystem : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(endScreen);
     }
+
+    private void SetFileText()
+    {
+        fileCountText.text = files.Count.ToString();
+    }
+
     void Start()
     {
         
@@ -85,6 +97,7 @@ public class FileSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SetFileText();
         ActivateEffects();
     }
 }
