@@ -4,12 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class Pathways : MonoBehaviour
 {
+    public int bufferTime;
     public string sceneName;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == ("Player"))
         {
-            Debug.Log("sceneloader");
+            // Debug.Log("sceneloader");
+            GameManager.Instance.GetComponent<ScanTimer>().currentTime = bufferTime;
             SceneManager.LoadScene(sceneName);
         }
     }

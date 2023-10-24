@@ -467,6 +467,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6166973f14ad550429b87d221c052e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bufferTime: 1
   sceneName: Boss
 --- !u!50 &264452498
 Rigidbody2D:

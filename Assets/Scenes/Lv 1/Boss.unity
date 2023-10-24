@@ -2102,6 +2102,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6166973f14ad550429b87d221c052e5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bufferTime: 0
   sceneName: GameOver
 --- !u!50 &1231405254
 Rigidbody2D:
@@ -2639,6 +2640,14 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 271408784}
+    - target: {fileID: 6929973464289611741, guid: 099a6d9c0b5038a428a6e2bb6343f53e, type: 3}
+      propertyPath: lootList.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6929973464289611741, guid: 099a6d9c0b5038a428a6e2bb6343f53e, type: 3}
+      propertyPath: lootList.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: bfadeec1775d7f4498a03937ad4c254d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 099a6d9c0b5038a428a6e2bb6343f53e, type: 3}
 --- !u!1 &1356184957

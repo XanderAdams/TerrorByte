@@ -9,10 +9,12 @@ public class FileSystem : MonoBehaviour
 {
     [Header("Component")]
     public TextMeshProUGUI fileCountText;
+    public TextMeshProUGUI fileNameText;
     
     public List<File> files;
     public File core;
     public bool activate;
+    public int fileCount;
 
     public string endScreen;
 
@@ -86,7 +88,16 @@ public class FileSystem : MonoBehaviour
 
     private void SetFileText()
     {
+        fileCount = files.Count;
         fileCountText.text = files.Count.ToString();
+        if (fileCount-1 >= 0)
+        {
+        fileNameText.text = ("Top File: " + files[fileCount-1].fileName);
+        }
+        else
+        {
+            fileNameText.text = ("Top File: " + "None");
+        }
     }
 
     void Start()
