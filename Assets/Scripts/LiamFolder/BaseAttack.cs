@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BaseAttack : MonoBehaviour
 {
-
+   
     public Animator animator;
 
     public Transform attackPoint;
@@ -19,6 +19,7 @@ public class BaseAttack : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Attack();
+          
         }
 
 
