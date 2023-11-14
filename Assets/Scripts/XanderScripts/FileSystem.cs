@@ -57,7 +57,7 @@ public class FileSystem : MonoBehaviour
             GameObject player = GameObject.FindWithTag("Player");
             if (player.GetComponent<MovementTopDown>() != null)
             {
-                player.GetComponent<MovementTopDown>().moveSpeed = 0;
+                player.GetComponent<MovementTopDown>().moveSpeed = 1;
             }
             if (player.GetComponent<BaseAttack>() != null)
             {
@@ -70,7 +70,7 @@ public class FileSystem : MonoBehaviour
                 current = files[i];
                 current.Passive();
 
-                if (current.open && activate)
+                if (current.open)
                 {
                     current.Active();
                 }

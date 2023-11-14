@@ -6,7 +6,7 @@ using UnityEngine;
 public class File : ScriptableObject
 {
         public float size;
-        public bool open;
+        public bool open = false;
         public string fileName;
         public Sprite fileSprite;
         public Color newColor;
