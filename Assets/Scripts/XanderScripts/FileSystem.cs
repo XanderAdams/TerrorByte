@@ -57,7 +57,7 @@ public class FileSystem : MonoBehaviour
             GameObject player = GameObject.FindWithTag("Player");
             if (player.GetComponent<MovementTopDown>() != null)
             {
-                player.GetComponent<MovementTopDown>().moveSpeed = 1;
+                player.GetComponent<MovementTopDown>().moveSpeed = 8;
             }
             if (player.GetComponent<BaseAttack>() != null)
             {
