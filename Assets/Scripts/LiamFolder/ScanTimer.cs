@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
 using TMPro;
 
@@ -7,6 +8,7 @@ public class ScanTimer : MonoBehaviour
 {
     [Header("Component")]
     public TextMeshProUGUI timerText;
+    public Slider slider;
 
     [Header("Timer Setting")]
     public float currentTime;
@@ -32,6 +34,7 @@ public class ScanTimer : MonoBehaviour
         currentTime = scanFrequency;
         }
         SetTimerText();
+        slider.value = currentTime;
     }
     private void SetTimerText()
     {
