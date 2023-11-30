@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class WeaponParent : MonoBehaviour
 {
-    public Vector2 Pointerposition { get; set; }
+    public Vector2 PointerPosition { get; set; }
     private void Update()
     {
-        transform.right = (Pointerposition - (Vector2)transform.position).normalized;
+        transform.right = (PointerPosition - (Vector2)transform.position).normalized;
     }
 }

@@ -15,21 +15,24 @@ public class BaseAttack : MonoBehaviour
     public LayerMask enemyLayers;
     // Update is called once per frame
     public int attackDamage = 5;
-    private WeaponParent weaponParent;
+   
 
     [SerializeField]
     public InputActionReference pointerPosition;
 
+    private Vector2 pointerInput;
+    private WeaponParent weaponParent;
+
     private void Awake()
     {
-        //weaponParent = GetComponentInChildren<WeaponParent>();
+        weaponParent = GetComponentInChildren<WeaponParent>();
     }
 
     void Update()
     {
 
-        //pointerInput = GetPointerInput();
-       // weaponParent.PointerPosition = pointerInput();
+        pointerInput = GetPointerInput();
+        weaponParent.PointerPosition = pointerInput;
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Attack();
