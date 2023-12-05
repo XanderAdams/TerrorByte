@@ -2085,7 +2085,7 @@ GameObject:
   - component: {fileID: 790157514}
   - component: {fileID: 790157513}
   - component: {fileID: 790157512}
-  - component: {fileID: 790157511}
+  - component: {fileID: 790157516}
   m_Layer: 0
   m_Name: Door (1)
   m_TagString: Untagged
@@ -2093,20 +2093,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &790157511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 790157510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6166973f14ad550429b87d221c052e5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bufferTime: 5
-  sceneName: Start
 --- !u!50 &790157512
 Rigidbody2D:
   serializedVersion: 4
@@ -2219,8 +2205,21 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &790157516
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 790157510}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbae5b192afa1c74b9bc2d0f28804fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Start
 --- !u!1 &821295003
 GameObject:
   m_ObjectHideFlags: 0
@@ -3722,7 +3721,7 @@ GameObject:
   - component: {fileID: 1227560704}
   - component: {fileID: 1227560703}
   - component: {fileID: 1227560702}
-  - component: {fileID: 1227560701}
+  - component: {fileID: 1227560706}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -3730,20 +3729,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1227560701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1227560700}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6166973f14ad550429b87d221c052e5f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  bufferTime: 5
-  sceneName: 2A
 --- !u!50 &1227560702
 Rigidbody2D:
   serializedVersion: 4
@@ -3850,14 +3835,27 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1227560700}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.3, y: -28.86, z: 0}
-  m_LocalScale: {x: 4.4953384, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 13.300001, y: -28.86, z: 0}
+  m_LocalScale: {x: 4.495339, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1227560706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227560700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbae5b192afa1c74b9bc2d0f28804fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Start
 --- !u!1 &1232077189
 GameObject:
   m_ObjectHideFlags: 0
@@ -4360,7 +4358,8 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 1631561233}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 130834329, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
 --- !u!1001 &1455396805
 PrefabInstance:
@@ -6139,6 +6138,10 @@ PrefabInstance:
       propertyPath: slider
       value: 
       objectReference: {fileID: 504367117}
+    - target: {fileID: 4173596356451020233, guid: 1089e7970963a404195e321344422567, type: 3}
+      propertyPath: hasLimit
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4173596356451020233, guid: 1089e7970963a404195e321344422567, type: 3}
       propertyPath: timerText
       value: 
