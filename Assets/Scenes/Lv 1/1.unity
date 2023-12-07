@@ -2575,10 +2575,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bouncer
       objectReference: {fileID: 0}
+    - target: {fileID: 3783175553579461207, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3783175553579461288, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
       propertyPath: target
       value: 
       objectReference: {fileID: 1631561233}
+    - target: {fileID: 3783175553579461291, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
+      propertyPath: graphMask.value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
 --- !u!1 &1485408865

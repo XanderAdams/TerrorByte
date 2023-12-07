@@ -33,28 +33,28 @@ public class BaseAttack : MonoBehaviour
 
         pointerInput = GetPointerInput();
         weaponParent.PointerPosition = pointerInput;
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Attack();
+        //if (Input.GetMouseButton(0))
+        //{
+           // Attack();
           
-        }
+        //}
 
 
         
     }
 
-    void Attack()
-    {
-        animator.SetTrigger("Attack");
+    //void Attack()
+    //{
+        //animator.SetTrigger("Attack");
 
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        //Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
-        foreach(Collider2D enemy in hitEnemies)
-        {
+        //foreach(Collider2D enemy in hitEnemies)
+        //{
             //Debug.Log("Enemy: " + enemy.gameObject.name);
-            enemy.gameObject.GetComponent<Enemy>().TakeDamage(attackDamage);
-        }
-    }
+            //enemy.gameObject.GetComponent<Enemy>().TakeDamage(attackDamage);
+        //}
+    //}
     private Vector2 GetPointerInput()
     {
         Vector3 mousePos = pointerPosition.action.ReadValue<Vector2>();
