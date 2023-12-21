@@ -11,9 +11,9 @@ public class AttackPowerUpFile : File
     public override void Passive()
     {
         //Debug.Log("Passive");
-        if(GameObject.FindWithTag("Player").GetComponent<BaseAttack>()!=null)
+        if(GameObject.FindWithTag("Player").GetComponent<WeaponParent>()!=null)
         {
-            GameObject.FindWithTag("Player").GetComponent<BaseAttack>().attackDamage *= power;
+            GameObject.FindWithTag("Player").GetComponent<WeaponParent>().attackDamage *= power;
         }
     
     }

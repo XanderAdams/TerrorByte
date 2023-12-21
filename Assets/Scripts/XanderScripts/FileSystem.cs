@@ -57,11 +57,11 @@ public class FileSystem : MonoBehaviour
             GameObject player = GameObject.FindWithTag("Player");
             if (player.GetComponent<MovementTopDown>() != null)
             {
-                player.GetComponent<MovementTopDown>().moveSpeed = 1;
+                player.GetComponent<MovementTopDown>().moveSpeed = 8;
             }
-            if (player.GetComponent<BaseAttack>() != null)
+            if (player.GetComponent<WeaponParent>() != null)
             {
-                player.GetComponent<BaseAttack>().attackDamage = 1;
+                player.GetComponent<WeaponParent>().attackDamage = 1;
                 player.GetComponent<BaseAttack>().attackRange = 2.0f;
             }
             for (int i = 0; i < files.Count; i++)

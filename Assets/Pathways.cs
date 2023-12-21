@@ -10,10 +10,15 @@ public class Pathways : MonoBehaviour
     {
         if (other.tag == ("Player"))
         {
-            // Debug.Log("sceneloader");
+            LoadTarget(sceneName);
+        }
+    }
+
+    public void LoadTarget(string sceneName)
+    {
+        // Debug.Log("sceneloader");
             GameManager.Instance.GetComponent<ScanTimer>().currentTime = bufferTime;
             SceneManager.LoadScene(sceneName);
-        }
     }
     private void Update()
     {

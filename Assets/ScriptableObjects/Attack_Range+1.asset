@@ -16,6 +16,6 @@ MonoBehaviour:
   open: 0
   fileName: AttackRangePlus1
   fileSprite: {fileID: 21300000, guid: ee86ae4a10fa3de499d09c635d3668b5, type: 3}
-  newColor: {r: 0.6792453, g: 0.56140184, b: 0.008971129, a: 1}
+  newColor: {r: 0.6784314, g: 0.56078434, b: 0.007843138, a: 1}
   dropChance: 80
   range: 1

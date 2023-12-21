@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Reflection;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class BaseAttack : MonoBehaviour
 {
-
+   
     public Animator animator;
 
     public Transform attackPoint;
@@ -13,29 +15,51 @@ public class BaseAttack : MonoBehaviour
     public LayerMask enemyLayers;
     // Update is called once per frame
     public int attackDamage = 5;
+   
+
+    [SerializeField]
+    public InputActionReference pointerPosition;
+
+    private Vector2 pointerInput;
+    private WeaponParent weaponParent;
+
+    private void Awake()
+    {
+        weaponParent = GetComponentInChildren<WeaponParent>();
+    }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            Attack();
-        }
+
+        pointerInput = GetPointerInput();
+        weaponParent.PointerPosition = pointerInput;
+        //if (Input.GetMouseButton(0))
+        //{
+           // Attack();
+          
+        //}
 
 
         
     }
 
-    void Attack()
-    {
-        animator.SetTrigger("Attack");
+    //void Attack()
+    //{
+        //animator.SetTrigger("Attack");
 
-        Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
+        //Collider2D[] hitEnemies = Physics2D.OverlapCircleAll(attackPoint.position, attackRange, enemyLayers);
 
-        foreach(Collider2D enemy in hitEnemies)
-        {
+        //foreach(Collider2D enemy in hitEnemies)
+        //{
             //Debug.Log("Enemy: " + enemy.gameObject.name);
-            enemy.gameObject.GetComponent<Enemy>().TakeDamage(attackDamage);
-        }
+            //enemy.gameObject.GetComponent<Enemy>().TakeDamage(attackDamage);
+        //}
+    //}
+    private Vector2 GetPointerInput()
+    {
+        Vector3 mousePos = pointerPosition.action.ReadValue<Vector2>();
+        mousePos.z = Camera.main.nearClipPlane;
+        return Camera.main.ScreenToWorldPoint(mousePos);
     }
 
     void OnDrawGizmosSelected()
