@@ -91,6 +91,7 @@ public class EnemyDash : MonoBehaviour
     void shoot()
     {
         GameObject BulletIns = Instantiate(summon, launchPoint.position, Quaternion.identity);
+        BulletIns.SetActive(true);
         BulletIns.GetComponent<Rigidbody2D>().AddForce(Direction * launchSpeed);
     }
 
@@ -110,7 +111,7 @@ public class EnemyDash : MonoBehaviour
         {
             Debug.Log("speedup");
 
-            ai.maxSpeed = 10;
+            ai.maxSpeed = 25;
 
             Debug.Log("Test");
             Debug.Log(ai.maxSpeed);

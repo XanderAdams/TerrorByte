@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   size: 2
   open: 0
-  fileName: 
+  fileName: Damage2X
   fileSprite: {fileID: 21300000, guid: ee86ae4a10fa3de499d09c635d3668b5, type: 3}
   newColor: {r: 0.8679245, g: 0.14736721, b: 0, a: 1}
-  dropChance: 80
+  dropChance: 20
   power: 2

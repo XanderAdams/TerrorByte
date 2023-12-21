@@ -2,18 +2,27 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
 
 public class FileSystem : MonoBehaviour
 {
+    [Header("Component")]
+    public TextMeshProUGUI fileCountText;
+    public TextMeshProUGUI fileNameText;
+    
     public List<File> files;
     public File core;
     public bool activate;
+    public int fileCount;
 
     public string endScreen;
 
     public void AddFile(File file)
     {
         files.Add(file);
+        SetFileText();
+       
     }
 
     public void PopFile()
@@ -25,9 +34,11 @@ public class FileSystem : MonoBehaviour
         
         if(!files.Contains(core))
         {
-            Debug.Log("DIE");
+            Debug.Log("DIE" + gameObject.name +core.fileName + "NotFound");
             DIE();
         }
+        SetFileText();
+
     }
 
     public void PrintList()
@@ -41,25 +52,28 @@ public class FileSystem : MonoBehaviour
     public void ActivateEffects()
     {
         File current;
-        GameObject player = GameObject.FindWithTag("Player");
-        if(player.GetComponent<MovementTopDown>()!=null)
+        if (GameObject.FindWithTag("Player") != null) 
         {
-            player.GetComponent<MovementTopDown>().moveSpeed = 0;
-        }
-        if(player.GetComponent<BaseAttack>()!=null)
-        {
-            player.GetComponent<BaseAttack>().attackDamage = 1;
-            player.GetComponent<BaseAttack>().attackRange = 2.0f;
-        }
-        for(int i = 0; i < files.Count; i++)
-        {
-            Debug.Log(i);
-            current = files[i];
-            current.Passive();
-
-            if(current.open && activate)
+            GameObject player = GameObject.FindWithTag("Player");
+            if (player.GetComponent<MovementTopDown>() != null)
             {
-                current.Active();
+                player.GetComponent<MovementTopDown>().moveSpeed = 8;
+            }
+            if (player.GetComponent<WeaponParent>() != null)
+            {
+                player.GetComponent<WeaponParent>().attackDamage = 1;
+                player.GetComponent<BaseAttack>().attackRange = 2.0f;
+            }
+            for (int i = 0; i < files.Count; i++)
+            {
+                //Debug.Log(i);
+                current = files[i];
+                current.Passive();
+
+                if (current.open)
+                {
+                    current.Active();
+                }
             }
         }
     }
@@ -71,6 +85,21 @@ public class FileSystem : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         SceneManager.LoadScene(endScreen);
     }
+
+    private void SetFileText()
+    {
+        fileCount = files.Count;
+        fileCountText.text = files.Count.ToString();
+        if (fileCount-1 >= 0)
+        {
+        fileNameText.text = ("Top File: " + files[fileCount-1].fileName);
+        }
+        else
+        {
+            fileNameText.text = ("Top File: " + "None");
+        }
+    }
+
     void Start()
     {
         
@@ -79,6 +108,7 @@ public class FileSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        SetFileText();
         ActivateEffects();
     }
 }

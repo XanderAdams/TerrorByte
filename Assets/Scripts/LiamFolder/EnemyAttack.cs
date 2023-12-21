@@ -22,9 +22,8 @@ public class EnemyAttack : MonoBehaviour
         
         
     }
-    public void Awake()
+    public void Update()
     {
-
         virus = GameManager.Instance.gameObject.GetComponent<TheKillsYouScript>();
     }
 }

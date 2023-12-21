@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce0173a9ef6775d4681e608e5515d2f4, type: 3}
   m_Name: Move
   m_EditorClassIdentifier: 
-  size: 2
+  size: 6
   open: 0
   fileName: Movement
   fileSprite: {fileID: 21300000, guid: ee86ae4a10fa3de499d09c635d3668b5, type: 3}

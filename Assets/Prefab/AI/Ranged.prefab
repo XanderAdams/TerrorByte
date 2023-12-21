@@ -386,5 +386,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48b38894517d24646a1e580fac0c2652, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  droppedItemPrefab: {fileID: 0}
-  lootList: []
+  droppedItemPrefab: {fileID: 59977985733821931, guid: 56fce096b758f5141bd3f7cc39780874, type: 3}
+  lootList:
+  - {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
+  - {fileID: 11400000, guid: aa5a278244f6f1543905f1b55c865d2b, type: 2}
+  - {fileID: 11400000, guid: 86aed6d42eaa5f34092ea26e7fb86599, type: 2}
+  - {fileID: 11400000, guid: aa5a278244f6f1543905f1b55c865d2b, type: 2}
+  - {fileID: 11400000, guid: 86aed6d42eaa5f34092ea26e7fb86599, type: 2}
+  - {fileID: 11400000, guid: 6b08084853575024785aaf7ad65895da, type: 2}
+  - {fileID: 11400000, guid: 6b08084853575024785aaf7ad65895da, type: 2}
+  - {fileID: 11400000, guid: bfadeec1775d7f4498a03937ad4c254d, type: 2}
