@@ -356,6 +356,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743526765b36676419aafbd951475f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fileCountText: {fileID: 0}
+  fileNameText: {fileID: 0}
   files:
   - {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
   - {fileID: 11400000, guid: fd163c7c34ed97347a98e0a84404ccb1, type: 2}
@@ -364,6 +366,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: fd163c7c34ed97347a98e0a84404ccb1, type: 2}
   core: {fileID: 0}
   activate: 0
+  fileCount: 0
   endScreen: 
 --- !u!1 &116268685
 GameObject:
@@ -1105,12 +1108,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 743526765b36676419aafbd951475f82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fileCountText: {fileID: 0}
+  fileNameText: {fileID: 0}
   files:
   - {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
   - {fileID: 11400000, guid: fd163c7c34ed97347a98e0a84404ccb1, type: 2}
   - {fileID: 11400000, guid: 704592a844fe5a14a9a8f4f3d06b03c1, type: 2}
   core: {fileID: 11400000, guid: 5ff3494748183874d90c220b8b9d5bae, type: 2}
   activate: 0
+  fileCount: 0
   endScreen: 
 --- !u!4 &1553480454 stripped
 Transform:
@@ -1963,7 +1969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3783175553579461203, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3783175553579461288, guid: fd1476893e847a741bd7d71adb0d4a99, type: 3}
       propertyPath: target
@@ -2025,6 +2031,10 @@ PrefabInstance:
     - target: {fileID: 2127550704107685251, guid: 099a6d9c0b5038a428a6e2bb6343f53e, type: 3}
       propertyPath: m_Name
       value: BoEn
+      objectReference: {fileID: 0}
+    - target: {fileID: 2127550704107685251, guid: 099a6d9c0b5038a428a6e2bb6343f53e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2127550704107685263, guid: 099a6d9c0b5038a428a6e2bb6343f53e, type: 3}
       propertyPath: target
