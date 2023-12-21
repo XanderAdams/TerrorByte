@@ -13,7 +13,7 @@ public class RangedStateMachine : MonoBehaviour
     // Start is called before the first frame update
     void Awake()
     {
-        States.Add(Sationary);
+        /*States.Add(Sationary);
         States.Add(LOS);
         States.Add(RangeHunt);
         States.Add(Firing);
@@ -28,7 +28,7 @@ public class RangedStateMachine : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {*/
         
     }
 }
